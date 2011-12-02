@@ -1,0 +1,30 @@
+h1. Sunspot Cell Jars
+
+h2. Introduction
+
+This happy little gem will install the jars that you need for
+the very wonderful sunspot_cell project found here on github.
+
+h2. Installation
+
+First, make sure that you have `sunspot_solr` installed and in
+your Gemfile.
+
+In your Gemfile add:
+
+gem 'sunspot_cell_jars', :git => 'https://github.com/mrcsparker/sunspot_cell_jars.git' 
+
+Do a `bundle install`
+
+and then run:
+
+rails g sunspot_cell_jars:install
+
+and you are on your way!
+
+Note: this gem does not actually configure sunspot_cell, it just installs the jars
+needed to make extaction work.
+
+h2. Contributing
+
+Fork on GitHub and after you've committed tested patches, send a pull request.
