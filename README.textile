@@ -5,6 +5,25 @@ h2. Introduction
 This happy little gem will install the jars that you need for
 the very wonderful sunspot_cell project found here on github.
 
+h2. Before you install
+
+These jars might give you trouble on the current version of sunspot_solr (though I have not checked).
+You might want to use my updated fork, which uses solr 3.5:
+
+https://github.com/mrcsparker/sunspot
+
+<pre>
+# If you want to load it for test and development
+group :test, :development do 
+  gem 'sunspot_solr', :git => "https://github.com/mrcsparker/sunspot.git"
+end
+</pre>
+
+Also, you are going to want to use a version of `sunspot_cell` that is up to date with the
+newest 1.3.x release.  I am using:
+
+https://github.com/zheileman/sunspot_cell
+
 h2. Installation
 
 First, make sure that you have `sunspot_solr` installed and in
@@ -28,6 +47,7 @@ and you are on your way!
 
 Note: this gem does not actually configure sunspot_cell, it just installs the jars
 needed to make extaction work.
+
 
 h2. Contributing
 
