@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "sunspot_cell_jars"
-  s.version     = "0.1"
+  s.version     = "0.2"
   s.authors     = [ "Chris Parker" ]
   s.email       = "mrcsparker@gmail.com"
   s.homepage    = "http://github.com/mrcsparker/sunspot_cell_jars"

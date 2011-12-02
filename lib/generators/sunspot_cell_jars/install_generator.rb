@@ -32,11 +32,14 @@ module SunspotCellJars
             rome-0.9.jar
             tagsoup-1.2.1.jar
             tika-core-0.10.jar
-            tika-parsers-0.10.jar}
+            tika-parsers-0.10.jar
+            xercesImpl-2.8.1.jar
+            xml-apis-1.0.b2.jar
+            xmlbeans-2.3.0.jar}
 
-            files.each do |file|
-              copy_file file, "solr/lib/#{file}"
-            end
+          files.each do |file|
+            copy_file file, "solr/lib/#{file}"
+          end
         else
           say "You need to have a solr directory created in your rails root before I can proceed"
         end
