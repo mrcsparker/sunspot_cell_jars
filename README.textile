@@ -12,13 +12,17 @@ your Gemfile.
 
 In your Gemfile add:
 
+<pre>
 gem 'sunspot_cell_jars', :git => 'https://github.com/mrcsparker/sunspot_cell_jars.git' 
+</pre>
 
 Do a `bundle install`
 
 and then run:
 
+<pre>
 rails g sunspot_cell_jars:install
+</pre>
 
 and you are on your way!
 
